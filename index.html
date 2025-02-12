@@ -9,14 +9,14 @@
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Portfolio website complete</title>
+        <title>Gulfaniya M.</title>
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">Gulfaniya</a>
+                    <a href="#" class="nav__logo">Gulfaniya M.</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -24,7 +24,8 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Certifications</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -40,7 +41,8 @@
             <section class="home bd-grid" id="home">
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Gulfaniya</span><br> a Travel Consultant</h1>
-                    <a href="#" class="button">Resume/CV</a>
+                    <a href="https://drive.google.com/file/d/1QecvshRsFLi45hDZH1gLqJTWE0SCJJJA/view?usp=sharing" 
+                    target="_blank" class="button">Resume/CV</a>
                 </div>
 
                 <div class="home__social">
@@ -56,7 +58,7 @@
                         </mask>
                         <g mask="url(#mask0)">
                             <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/banner2.JPG"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/footer-img.png"/>
                         </g>
                     </svg>
                 </div>
@@ -153,48 +155,126 @@
     </div>
 </section>
 
+<!--===== EXPERIENCE =====-->
+<section class="experience section" id="experience">
+    <h2 class="section-title">Experience</h2>
+
+    <!-- Swiper Carousel -->
+    <div class="experience__container swiper">
+        <div class="swiper-wrapper">
+            
+            <!-- Experience Slide 1 -->
+            <div class="swiper-slide experience__card">
+                <h3 class="experience__title">Travel Consultant & Customer Support Specialist</h3>
+                <span class="experience__company">CUSTOM TRAVEL SOLUTIONS | Pune, May 2022 - Jan 2025</span>
+                <ul class="experience__description">
+                    <li><b>Managed & booked</b> end-to-end travel packages, including flights, hotels, cruises, car rentals, and activities, handling <b>150+ bookings per month</b>.</li>
+                    <li><b>Handled high-volume customer interactions</b> via calls, chat, and email, assisting <b>50+ clients daily</b> with travel inquiries and bookings.</li>
+                    <li><b>Increased client satisfaction by 30%</b> through personalized travel recommendations and seamless itinerary planning.</li>
+                    <li><b>Resolved 95% of customer issues</b> related to cancellations, rescheduling, and refunds within the first interaction, minimizing escalations.</li>
+                    <li><b>Optimized travel planning workflows</b>, reducing booking errors by <b>20%</b> using GDS platforms (<b>Amadeus, Sabre</b>).</li>
+                    <li><b>Maintained real-time communication</b> with clients, ensuring smooth travel experiences and proactively addressing concerns.</li>
+                    <li><b>Achieved a 98% positive feedback rating</b>, demonstrating a strong commitment to customer satisfaction and service excellence.</li>
+                </ul>
+            </div>
+
+            <!-- Experience Slide 2 -->
+            <div class="swiper-slide experience__card">
+                <h3 class="experience__title">Diploma in Aviation, Hospitality & Travel Management</h3>
+                <span class="experience__company">FRANKFINN INSTITUTE OF AIR HOSTESS TRAINING | Pune, July 2020 - Dec 2021</span>
+                <ul class="experience__description">
+                    <li>Comprehensive training in <b>travel management, customer service, and hospitality operations</b>.</li>
+                    <li>Developed expertise in <b>airline reservation systems, travel documentation, and itinerary planning</b>.</li>
+                    <li>Enhanced skills in <b>effective communication, conflict resolution, and client handling</b> for the travel industry.</li>
+                    <li>Trained in <b>airport operations, safety procedures, and customer engagement</b> for seamless travel experiences.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pagination and Navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+<!-- SwiperJS CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".swiper", {
+            loop: true,
+            lazy: true,
+            spaceBetween: 30,
+            slidesPerView: 1,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        });
+    });
+</script>
+
+
+
+
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+                <h2 class="section-title">Certifications</h2>
 
                 <div class="work__container bd-grid">
                     <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
+                        <img src="assets/img/work1.png" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
+                        <img src="assets/img/work2.png" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
+                        <img src="assets/img/work3.png" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
+                        <img src="assets/img/work4.png" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
+                        <img src="assets/img/work5.png" alt="">
                     </a>
                     <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
+                        <img src="assets/img/work6.png" alt="">
                     </a>
                 </div>
             </section>
+
+            <center>
+
+                <div class="home__data">
+                    <a href="https://drive.google.com/drive/folders/1ylHamrV8CJLTfMPSXvVwp6Tlkz76Pa24" 
+                    target="_blank" class="button">Show more</a>
+                </div>
+            
+            </center>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
+            
+                <div class="contact__container">
+                    <!-- Left: Contact Form -->
                     <form action="" class="contact__form">
                         <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="message" placeholder="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="email" placeholder="Email" class="contact__input">
+                        <textarea name="message" placeholder="Message" cols="0" rows="10" class="contact__input"></textarea>
                         <input type="button" value="Send" class="contact__button button">
                     </form>
+            
+                    <!-- Right: Image -->
+                    <div class="contact__image">
+                        <img src="assets/img/footer-img.png" alt="Contact Image">
+                    </div>
                 </div>
             </section>
-        </main>
-
+            
         <!--===== FOOTER =====-->
         <footer class="footer">
             <p class="footer__title">Gulfaniya</p>
